@@ -148,7 +148,7 @@ if __name__ == "__main__":
     html_code = styled_df2.to_html(escape=False)
 
     # Manipulate the HTML string to include the width property
-    html_code = html_code.replace('<table', '<table style="width:800px; margin-left:120px;"')
+    html_code = html_code.replace('<table', '<table style="width:800px; margin-left:100px;"')
 
 
     st.markdown(html_code, unsafe_allow_html=True)
