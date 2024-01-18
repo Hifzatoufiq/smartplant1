@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
 import os
-from streamlit_extras.app_logo import add_logo
+
 
 
 
@@ -153,7 +153,7 @@ if __name__ == "__main__":
     html_code = styled_df2.to_html(escape=False)
 
     # Manipulate the HTML string to include the width property
-    html_code = html_code.replace('<table', '<table style="width:800px; margin-left:150px;"')
+    html_code = html_code.replace('<table', '<table style="width:1000px;"')
 
     st.markdown(html_code, unsafe_allow_html=True)
      
